@@ -16,23 +16,23 @@
 # You also need aircrack-ng, thanks to Mister X and kevin devine for providing the best suite ever (http://www.aircrack-ng.org/)
 # I would like also to thanks Stefan Viehbock for all is amazing work on wps (http://sviehb.wordpress.com/2011/12/27/wi-fi-protected-setup-pin-brute-force-vulnerability/)  
 # 1.1 (10-12-2012)
-#	- Support for PIN beginning with one or several 0 thanks to the data of atim and tresal. 
-#	- New MAC supported : 6A:C0:6F (HG566 default ESSID vodafoneXXXX )
+#   - Support for PIN beginning with one or several 0 thanks to the data of atim and tresal. 
+#   - New MAC supported : 6A:C0:6F (HG566 default ESSID vodafoneXXXX )
 # 1.2 (12/12/2012)
-#	- Fixed output bugs in backtrack and other distributions
-#	- Added support to the generic default PIN known
+#   - Fixed output bugs in backtrack and other distributions
+#   - Added support to the generic default PIN known
 # 1.3 (23/01/2013)
-#	- New supported devices:
-#		- 7 bSSID vodafoneXXXX (HG566a) > 6A:3D:FF / 6A:A8:E4 / 6A:C0:6F / 6A:D1:67 / 72:A8:E4 / 72:3D:FF / 72:53:D4
-#		- 2 bSSID WLAN_XXXX (PDG-A4001N de adbroadband) > 74:88:8B / A4:52:6F
-#		- 2 new models affected:
-#			1) SWL (Samsung Wireless Link), default ESSID SEC_ LinkShare_XXXXXX.  2 known affected BSSID > 80:1F:02 / E4:7C:F9
-#			2) Conceptronic  c300brs4a  (default ESSID C300BRS4A ) 1 BSSID known  > 00:22:F7   
-#	- Rules to check the validity of the mac address (thanks r00tnuLL and anteres_145 for your codes) 
-#	- More filter for some case where several default ssid are possible,check the difference between ssid and bssid for FTE for possibles mismatch...
+#   - New supported devices:
+#       - 7 bSSID vodafoneXXXX (HG566a) > 6A:3D:FF / 6A:A8:E4 / 6A:C0:6F / 6A:D1:67 / 72:A8:E4 / 72:3D:FF / 72:53:D4
+#       - 2 bSSID WLAN_XXXX (PDG-A4001N de adbroadband) > 74:88:8B / A4:52:6F
+#       - 2 new models affected:
+#           1) SWL (Samsung Wireless Link), default ESSID SEC_ LinkShare_XXXXXX.  2 known affected BSSID > 80:1F:02 / E4:7C:F9
+#           2) Conceptronic  c300brs4a  (default ESSID C300BRS4A ) 1 BSSID known  > 00:22:F7   
+#   - Rules to check the validity of the mac address (thanks r00tnuLL and anteres_145 for your codes) 
+#   - More filter for some case where several default ssid are possible,check the difference between ssid and bssid for FTE for possibles mismatch...
 #       - More information displayed when a target is selected
-#	- Display and colours problems are definitively solved for all distributions, one version
-#	- Rewriting of code (tanks to r00tnuLL, antares_145, goyfilms and 1camron1 for their advices and feed back)
+#   - Display and colours problems are definitively solved for all distributions, one version
+#   - Rewriting of code (tanks to r00tnuLL, antares_145, goyfilms and 1camron1 for their advices and feed back)
 # 1.4 ( 22/05/2013)
 #      - Complete Rewriting of code to provide new functions:
 #          - Multi language         
@@ -52,8 +52,8 @@
 
 ##################################### COLORS
 
-colorbase="\E[0m"                      # We define the colors as variables to avoid problems of output from one distribution to the other 
-azulfluo="\033[1;36m"           
+colorbase="\033[0m"
+azulfluo="\033[1;36m"
 amarillo="\033[1;33m"
 rojo="\033[1;31m"
 blanco="\033[1;37m"
@@ -2025,7 +2025,7 @@ done
 
 
 SHORTMENUE(){                                                 # Menu avec fonctionalité réduite )pas de scan, pas d'attaque) auquel sera cantonné l'utilisateur jusqu'à ce 
-                                                              # ce 	que mort s'en suive, trois heure du mat je commence à péter un cable, jusqu'à ce que il y ait une
+                                                              # ce  que mort s'en suive, trois heure du mat je commence à péter un cable, jusqu'à ce que il y ait une
                                                              # interface compatible reconnue 
 echo ""
 echo "$SORTMENUE_WARNING"
